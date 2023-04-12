@@ -1,0 +1,242 @@
+*{
+   margin:0;
+   padding:0;
+}
+
+a{
+   text-decoration: none;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   height: 100vh;
+   width: 100vw;
+   -webkit-user-select: none;
+   /* Safari */
+   -ms-user-select: none;
+   /* IE 10 and IE 11 */
+   user-select: none;
+   /* Standard syntax */
+   font-family: 'Poppins', sans-serif;
+}
+
+.ipadpro{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 1296px;
+   height: 934px;
+   background-color: black;
+   border-radius: 50px;
+   border: 6px solid #555555;
+}
+
+.black-edge{
+   width: 1194px;
+   height: 834px;
+   background-color: #1A1624;
+   border-radius: 20px;
+   background: url('img/background.jpg');
+}
+
+.content{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 48px;
+   height: 100%;
+   box-sizing: border-box;
+}
+
+.navigation{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 64px;
+   height: 100%;
+   align-items: center;
+}
+.navigation::after {
+   content: "";
+   width: 42px;
+   height: 42px;
+}
+
+.side-nav{
+   display: flex;
+   flex-direction: column;
+   background: rgba(255, 255, 255, 0.1);
+   padding: 30px 0;
+   align-items: center;
+   justify-content: center;
+   border-radius: 24px;
+   width: 64px;
+}
+
+.side-nav-icon{
+   display: block;
+   padding-bottom: 40px;
+}
+
+.side-nav-icon:last-of-type{
+   padding: 0;   
+}
+
+.music-player{
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 40px;
+   color:#FFFFFF;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.controls{
+   padding:32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 200px;
+ }
+
+.song-controls{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 186px;
+}
+.center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cover{
+   border-radius: 40px;
+   display: block;
+}
+
+.title{
+   display: block;
+   color:#FFFFFF;
+   font-size: 22px;
+}
+
+.artist{
+   color: rgba(255, 255, 255, 0.6);
+   font-size: 14px;
+   display: block;
+   font-weight: 400;
+}
+
+.time{
+   font-size: 9px;
+   color: rgba(255, 255, 255, 0.6);
+   font-weight: 400;
+}
+
+.slider {
+   -webkit-appearance: none;
+   width: 100%;
+   height: 2px;
+   border-radius: 5px;
+   background: #d3d3d3;
+   outline: none;
+   opacity: 0.7;
+   -webkit-transition: .2s;
+   transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: #d0d0d0;
+   cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background: #ffffff;
+   cursor: pointer;
+}
+
+.duration{
+   padding-top: 6px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.vol-bar{
+   width: 90%;
+}
+
+.volume{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.progress-bar{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.recents{
+   display: flex;
+   flex-direction: column;
+   width: 476px;
+   align-items: center; 
+   gap:40px;
+}
+
+.recents-title{
+   color:#ffffff;
+   font-size:38px;
+   line-height: 30px;
+}
+
+.view-all{
+   color:rgba(255, 255, 255, 0.6);
+   font-size:14px;
+   font-weight: 400;
+   line-height: 8px;
+}
+
+.recents-header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   align-items: flex-end;
+}
+
+.tiles-recents{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap:40px;
+   width: 100%;
+}
+
+.create-station{
+   display: flex;
+   background-color: rgba(255, 255, 255, 0.1);
+   color:rgba(255, 255, 255, 0.6);
+   padding: 12px 16px;
+   border-radius: 16px;
+   border: none;
+   font-size: 14px;
+   align-items: center;
+   gap:8px;
+   cursor: pointer;
+}
